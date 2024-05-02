@@ -1,3 +1,4 @@
+set backspace=indent,eol,start
 set nocompatible
 set number
 set relativenumber
