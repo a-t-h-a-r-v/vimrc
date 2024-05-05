@@ -15,7 +15,15 @@ To use this Vim configuration:
 1. Clone this repository to your local machine.
 2. Place all the directories and files in ~/.vim directory.
 3. Ensure you have vimPlug installed.
-4. Open Vim and run :PlugInstall to install the listed plugins.
+4. Add these lines to ~/.vimrc.
+```sh
+source ~/.vim/vimrc/braceCompletion.vimrc
+source ~/.vim/vimrc/keyMapping.vimrc
+source ~/.vim/vimrc/custom.vimrc
+source ~/.vim/vimrc/vimPlug.vimrc
+source ~/.vim/vimrc/templates.vimrc
+```
+5. Open Vim and run :PlugInstall to install the listed plugins.
 
 ## Features
 - Automatic brace completion for C and C++ files.
@@ -28,14 +36,4 @@ To use this Vim configuration:
 ```sh
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-## Editing Your .vimrc file
-Add these lines to the ~/.vimrc file
-```sh
-source ~/.vim/vimrc/braceCompletion.vimrc
-source ~/.vim/vimrc/keyMapping.vimrc
-source ~/.vim/vimrc/custom.vimrc
-source ~/.vim/vimrc/vimPlug.vimrc
-source ~/.vim/vimrc/templates.vimrc
 ```
